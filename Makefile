@@ -87,7 +87,7 @@ endif
 	cd node_modules/react-native/third-party-podspecs && pod ipc spec glog.podspec >  ~/.cocoapods/repos/artsy/glog/$(GLOGVERSION)/glog.podspec.json
 
 	@echo "Modifying Yoga to reflect the React Native repo paths"
-	sed -i -e 's/$(YOGA_SRC_BEFORE)/$(YOGA_SRC_AFTER)/g' ~/.cocoapods/repos/artsy/Yoga/$(YOGAVERSION)/Yoga.podspec.json
+	sed -i -e 's/$(YOGA_SRC_BEFORE)/$(YOGA_SRC_AFTER)/g' ~/.cocoapods/repos/artsy/yoga/$(YOGAVERSION)/yoga.podspec.json
 
 	@echo "Commiting the changes to our shared repo"
 	cd ~/.cocoapods/repos/artsy && git add .
